@@ -3,78 +3,44 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>About - Top AI Tools & Productivity Software</title>
+  <title>About - My AI Tools Site</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
   <style>
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      background: #f4f7fb;
-      color: #333;
-    }
-    header {
-      background: #2d3748;
-      color: white;
-      padding: 1rem 2rem;
-      text-align: center;
-      font-size: 1.8rem;
-      font-weight: bold;
-      letter-spacing: 1px;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    nav {
-      margin-top: 0.5rem;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      font-weight: 600;
-      font-size: 1rem;
-    }
-    nav a {
-      color: #cbd5e0;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-    nav a:hover {
-      color: white;
-    }
-    main {
-      max-width: 700px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-      line-height: 1.6;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      color: #718096;
-      font-size: 0.9rem;
-      margin-top: 3rem;
+    /* Same styles as index.html */
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+    body { background: #f5f7fa; color: #333; line-height: 1.6; min-height: 100vh; display: flex; flex-direction: column; }
+    header { background: #232f3e; padding: 1rem 2rem; color: white; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
+    header h1 { font-weight: 700; font-size: 1.5rem; letter-spacing: 1px; }
+    nav a { color: white; text-decoration: none; margin-left: 2rem; font-weight: 600; transition: color 0.3s ease; }
+    nav a:hover { color: #febd69; }
+    main { flex-grow: 1; max-width: 900px; margin: 2rem auto; padding: 0 1rem; }
+    h2 { font-weight: 700; margin-bottom: 1rem; border-bottom: 3px solid #febd69; padding-bottom: 0.3rem; display: inline-block; }
+    p { margin-bottom: 1rem; font-size: 1.1rem; color: #555; }
+    footer { background: #232f3e; color: white; text-align: center; padding: 1rem 0; font-size: 0.9rem; margin-top: auto; }
+    @media (max-width: 600px) {
+      header { flex-direction: column; text-align: center; }
+      nav a { margin: 0.5rem 1rem; }
     }
   </style>
 </head>
 <body>
   <header>
-    About
+    <h1>My AI Tools Site</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
       <a href="contact.html">Contact</a>
     </nav>
   </header>
   <main>
-    <h1>About This Site</h1>
-    <p>
-      Welcome to your go-to resource for the best AI tools and productivity software in 2025! 
-      Our mission is to help you discover, compare, and choose the right tools to boost your work and creativity.
-    </p>
-    <p>
-      Whether you're a content creator, marketer, developer, or just curious about AI-powered apps, we provide honest reviews and affiliate links to get you started quickly.
-    </p>
+    <h2>About Us</h2>
+    <p>Welcome to My AI Tools Site! We are passionate about helping you discover the best AI productivity tools to simplify your work and boost creativity.</p>
+    <p>Our mission is to bring you honest reviews, detailed guides, and up-to-date news on the latest AI technologies. Whether you're a beginner or an expert, you'll find valuable insights here.</p>
+    <p>Stay tuned for fresh content and recommendations designed to help you thrive in an AI-powered world.</p>
   </main>
   <footer>
-    &copy; 2025 YourSiteName. Powered by AI Tools.
+    &copy; 2025 My AI Tools Site. Powered by AI Tools.
   </footer>
 </body>
 </html>
