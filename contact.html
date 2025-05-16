@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - Top AI Tools & Productivity Software</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      background: #f4f7fb;
+      color: #333;
+    }
+    header {
+      background: #2d3748;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+      font-size: 1.8rem;
+      font-weight: bold;
+      letter-spacing: 1px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav {
+      margin-top: 0.5rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      font-weight: 600;
+      font-size: 1rem;
+    }
+    nav a {
+      color: #cbd5e0;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: white;
+    }
+    main {
+      max-width: 700px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      line-height: 1.6;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      color: #718096;
+      font-size: 0.9rem;
+      margin-top: 3rem;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    input, textarea {
+      padding: 0.75rem;
+      border: 1px solid #cbd5e0;
+      border-radius: 5px;
+      font-size: 1rem;
+      font-family: inherit;
+      resize: vertical;
+    }
+    button {
+      background: #3182ce;
+      color: white;
+      padding: 0.75rem;
+      border: none;
+      border-radius: 5px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    button:hover {
+      background: #2b6cb0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    Contact
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main>
+    <h1>Contact Us</h1>
+    <p>If you have questions, suggestions, or want to collaborate, please reach out:</p>
+    <form action="mailto:your-email@example.com" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </main>
+  <footer>
+    &copy; 2025 YourSiteName. Powered by AI Tools.
+  </footer>
+</body>
+</html>
