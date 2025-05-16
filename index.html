@@ -2,73 +2,128 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>My AI Tools Site</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
   <style>
+    /* Reset & base */
+    * {
+      margin: 0; padding: 0; box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
     body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f9f9f9;
+      background: #f5f7fa;
       color: #333;
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
     }
-
     header {
-      background-color: #0f172a;
-      color: #fff;
-      padding: 1rem;
-      text-align: center;
+      background: #232f3e; /* Amazon dark blue */
+      padding: 1rem 2rem;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.15);
     }
-
+    header h1 {
+      font-weight: 700;
+      font-size: 1.5rem;
+      letter-spacing: 1px;
+    }
     nav a {
-      margin: 0 1rem;
-      color: #fff;
+      color: white;
       text-decoration: none;
+      margin-left: 2rem;
+      font-weight: 600;
+      transition: color 0.3s ease;
     }
-
     nav a:hover {
-      text-decoration: underline;
+      color: #febd69; /* Amazon orange */
     }
-
     main {
-      padding: 2rem;
+      flex-grow: 1;
+      max-width: 1200px;
+      margin: 2rem auto;
+      padding: 0 1rem;
     }
-
     section {
       margin-bottom: 3rem;
-      background: #fff;
-      padding: 1.5rem;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
     }
-
-    h1, h2 {
-      color: #1e293b;
-    }
-
-    ul {
-      padding-left: 1.5rem;
-    }
-
-    a.button {
+    h2 {
+      font-weight: 700;
+      margin-bottom: 1rem;
+      border-bottom: 3px solid #febd69;
+      padding-bottom: 0.3rem;
       display: inline-block;
-      background-color: #10b981;
-      color: #fff;
-      padding: 0.5rem 1rem;
-      border-radius: 5px;
-      text-decoration: none;
-      margin-top: 1rem;
     }
-
-    a.button:hover {
-      background-color: #059669;
+    /* Product cards grid */
+    .products-grid {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
-
-    footer {
-      text-align: center;
+    .card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
       padding: 1rem;
-      background-color: #0f172a;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+    }
+    .card img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    .card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    .card p {
+      flex-grow: 1;
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 1rem;
+    }
+    .btn {
+      background-color: #febd69;
+      border: none;
+      padding: 0.6rem 1rem;
+      border-radius: 5px;
+      font-weight: 700;
+      color: #232f3e;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #f3a847;
+    }
+    footer {
+      background: #232f3e;
       color: white;
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      nav a {
+        margin: 0.5rem 1rem;
+      }
     }
   </style>
 </head>
@@ -76,72 +131,49 @@
   <header>
     <h1>My AI Tools Site</h1>
     <nav>
-    <a href="index.html">Home</a>
-  <a href="about.html">About</a>
-  <a href="contact.html">Contact</a>
-  <a href="blog.html">Blog</a>
-     </nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
+    </nav>
   </header>
-
   <main>
-    <h1>Top AI Tools for Productivity</h1>
-
     <section>
-      <h2>Jasper AI</h2>
-      <p>Jasper AI is an advanced AI writing assistant that helps you generate marketing content, blog posts, emails, and more — quickly and at scale. Its intuitive interface and tone control make it ideal for creators, marketers, and teams.</p>
-      <ul>
-        <li>✅ Great for long-form and SEO content</li>
-        <li>✍️ Multiple writing tones and templates</li>
-        <li>🚀 Saves hours of content creation time</li>
-      </ul>
-      <p><a href="https://example.com/jasper-ai" target="_blank" class="button">Try Jasper AI</a></p>
+      <h2>Top AI Tools for Productivity</h2>
+      <div class="products-grid">
+        <article class="card">
+          <img src="https://cdn.pixabay.com/photo/2021/11/23/07/27/notebook-6815773_1280.jpg" alt="Jasper AI Writing Assistant" />
+          <h3>Jasper AI</h3>
+          <p>AI writing assistant to create high-quality marketing content quickly.</p>
+          <a href="https://affiliate-link-placeholder.com/jasper" target="_blank" class="btn">Try Jasper AI</a>
+        </article>
+        <article class="card">
+          <img src="https://cdn.pixabay.com/photo/2018/05/11/09/49/artificial-intelligence-3396200_1280.jpg" alt="Writesonic AI Content Generator" />
+          <h3>Writesonic</h3>
+          <p>Generate marketing copy, blog posts, and ads with AI-powered creativity.</p>
+          <a href="https://affiliate-link-placeholder.com/writesonic" target="_blank" class="btn">Try Writesonic</a>
+        </article>
+        <!-- Add more product cards here -->
+      </div>
     </section>
-
     <section>
-      <h2>Writesonic</h2>
-      <p>Writesonic empowers you to generate engaging marketing copy, ad content, blog articles, and even product descriptions with just a few prompts. Perfect for startups and freelancers needing fast content.</p>
-      <ul>
-        <li>⚡️ AI writer with over 80 templates</li>
-        <li>💬 Includes chatbot and landing page generator</li>
-        <li>💼 Supports over 25 languages</li>
-      </ul>
-      <p><a href="https://example.com/writesonic" target="_blank" class="button">Try Writesonic</a></p>
-    </section>
-
-    <section>
-      <h2>Grammarly</h2>
-      <p>Grammarly is your AI-powered writing assistant that checks grammar, clarity, and tone across everything you write — from emails to essays.</p>
-      <ul>
-        <li>🧠 Real-time writing feedback</li>
-        <li>🔐 Works in your browser, Word, and mobile apps</li>
-        <li>📝 Improves professionalism and readability</li>
-      </ul>
-      <p><a href="https://example.com/grammarly" target="_blank" class="button">Try Grammarly</a></p>
-    </section>
-
-    <section>
-      <h2>Notion</h2>
-      <p>Notion is a powerful productivity tool that combines notes, databases, to-do lists, and collaboration — all in one place.</p>
-      <ul>
-        <li>📋 Ideal for teams and individuals</li>
-        <li>🧱 Highly customizable templates</li>
-        <li>🔄 Syncs across all devices</li>
-      </ul>
-      <p><a href="https://example.com/notion" target="_blank" class="button">Try Notion</a></p>
-    </section>
-
-    <section>
-      <h2>Surfer SEO</h2>
-      <p>Surfer SEO uses AI to help you write content that ranks by analyzing competitors and optimizing your on-page SEO.</p>
-      <ul>
-        <li>🔍 Real-time keyword suggestions</li>
-        <li>📊 Content score system</li>
-        <li>⚙️ Integrates with Google Docs</li>
-      </ul>
-      <p><a href="https://example.com/surfer-seo" target="_blank" class="button">Try Surfer SEO</a></p>
+      <h2>Latest Blog Posts</h2>
+      <div class="products-grid">
+        <article class="card">
+          <img src="https://cdn.pixabay.com/photo/2017/01/06/19/15/keyboard-1953128_1280.jpg" alt="Boost Your Productivity" />
+          <h3>Boost Your Productivity with AI Tools</h3>
+          <p>Discover how AI tools can transform your workflow and save you time every day.</p>
+          <a href="blog-post-1.html" class="btn">Read More</a>
+        </article>
+        <article class="card">
+          <img src="https://cdn.pixabay.com/photo/2018/03/05/23/01/artificial-intelligence-3202761_1280.jpg" alt="Top AI Software 2025" />
+          <h3>Top AI Software to Try in 2025</h3>
+          <p>Stay ahead with the most powerful AI productivity software available today.</p>
+          <a href="blog-post-2.html" class="btn">Read More</a>
+        </article>
+      </div>
     </section>
   </main>
-
   <footer>
     &copy; 2025 My AI Tools Site. Powered by AI Tools.
   </footer>
