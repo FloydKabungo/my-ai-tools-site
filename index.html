@@ -3,137 +3,172 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Top AI Tools & Productivity Software</title>
+  <title>AIToolsHub – Best AI & Productivity Software</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
+  <link rel="icon" type="image/png" href="favicon.png">
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Poppins', sans-serif;
       margin: 0;
-      background: #f9f9f9;
+      background: #f0f4f8;
       color: #333;
     }
+
     header {
-      background: #111;
+      background: #1e1e2f;
       color: #fff;
-      padding: 20px;
       text-align: center;
+      padding: 40px 20px;
     }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+    }
+
+    header h1 span {
+      color: #00bfff;
+    }
+
     nav {
-      background: #222;
+      background: #2a2a3b;
       display: flex;
       justify-content: center;
-      gap: 20px;
-      padding: 10px 0;
+      gap: 30px;
+      padding: 14px 0;
     }
+
     nav a {
       color: #fff;
       text-decoration: none;
+      font-weight: 500;
     }
+
     nav a:hover {
       text-decoration: underline;
     }
+
     .container {
-      padding: 40px 20px;
       max-width: 1000px;
       margin: auto;
+      padding: 40px 20px;
     }
+
     .tool-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
+      gap: 25px;
     }
+
     .tool-card {
       background: #fff;
       padding: 20px;
-      border-radius: 8px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
+
+    .tool-card:hover {
+      transform: scale(1.03);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    }
+
     .tool-card h3 {
       margin-top: 0;
-      color: #222;
+      color: #1e1e2f;
     }
+
     .tool-button {
       display: inline-block;
       margin-top: 10px;
       padding: 10px 16px;
-      background: #0077ff;
+      background: #00bfff;
       color: #fff;
       text-decoration: none;
-      border-radius: 4px;
+      border-radius: 6px;
+      font-weight: 600;
     }
+
     .tool-button:hover {
-      background: #005fcc;
+      background: #0099cc;
     }
+
+    section {
+      margin-bottom: 60px;
+    }
+
     footer {
-      background: #111;
+      background: #1e1e2f;
       color: #fff;
       text-align: center;
       padding: 20px;
     }
-    section {
-      margin-bottom: 60px;
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 10px;
+      }
     }
   </style>
 </head>
 <body>
+
   <header>
-    <h1>Top AI Tools & Productivity Software</h1>
+    <h1><span>AI</span>ToolsHub</h1>
+    <p>Your Trusted Source for AI Tools & Productivity Software</p>
   </header>
 
   <nav>
     <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
   </nav>
 
   <div class="container">
     <section id="home">
-      <h2>Featured Tools</h2>
+      <h2>Featured AI Tools</h2>
       <div class="tool-grid">
         <div class="tool-card">
           <h3>Jasper AI</h3>
           <p><strong>AI writing assistant for marketers:</strong> Jasper helps you write high-converting marketing copy, emails, blog posts, and social media content 10x faster using AI.</p>
-          <a href="https://example.com/jasper" class="tool-button" target="_blank">Try Jasper AI</a>
+          <a href="https://example.com/jasper" target="_blank" class="tool-button">Try Jasper AI</a>
         </div>
 
         <div class="tool-card">
           <h3>Writesonic</h3>
           <p><strong>AI content creation for businesses:</strong> From blog posts to ad copy, Writesonic generates SEO-optimized content in seconds, powered by GPT-4.</p>
-          <a href="https://example.com/writesonic" class="tool-button" target="_blank">Try Writesonic</a>
+          <a href="https://example.com/writesonic" target="_blank" class="tool-button">Try Writesonic</a>
         </div>
 
         <div class="tool-card">
           <h3>Grammarly</h3>
           <p><strong>Smart grammar and writing assistant:</strong> Instantly fix grammar, spelling, tone, and clarity in everything you write — from emails to essays.</p>
-          <a href="https://example.com/grammarly" class="tool-button" target="_blank">Try Grammarly</a>
+          <a href="https://example.com/grammarly" target="_blank" class="tool-button">Try Grammarly</a>
         </div>
 
         <div class="tool-card">
           <h3>Notion</h3>
           <p><strong>Your all-in-one workspace:</strong> Organize notes, projects, and tasks in a flexible, AI-boosted interface for individuals and teams.</p>
-          <a href="https://example.com/notion" class="tool-button" target="_blank">Try Notion</a>
+          <a href="https://example.com/notion" target="_blank" class="tool-button">Try Notion</a>
         </div>
 
         <div class="tool-card">
           <h3>Surfer SEO</h3>
           <p><strong>AI-driven SEO optimization:</strong> Write content that ranks on Google using real-time SEO analysis and keyword recommendations.</p>
-          <a href="https://example.com/surferseo" class="tool-button" target="_blank">Try Surfer SEO</a>
+          <a href="https://example.com/surferseo" target="_blank" class="tool-button">Try Surfer SEO</a>
         </div>
       </div>
-    </section>
-
-    <section id="about">
-      <h2>About</h2>
-      <p>This website is dedicated to helping you find the best AI tools and productivity software to grow your business, write faster, and work smarter. All tools listed are tested, trusted, and recommended.</p>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Have questions or suggestions? Feel free to reach out at <a href="mailto:your@email.com">your@email.com</a></p>
     </section>
   </div>
 
   <footer>
-    © 2025 YourSiteName. Powered by AI Tools.
+    © 2025 AIToolsHub. Powered by AI Tools.
   </footer>
+
 </body>
 </html>
