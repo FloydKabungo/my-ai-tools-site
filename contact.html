@@ -3,86 +3,68 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact - Top AI Tools & Productivity Software</title>
+  <title>Contact - AI Tools Affiliate Site</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      background: #f4f7fb;
+      font-family: Arial, sans-serif;
+      margin: 2rem;
+      background-color: #f9f9f9;
       color: #333;
     }
-    header {
-      background: #2d3748;
-      color: white;
-      padding: 1rem 2rem;
-      text-align: center;
-      font-size: 1.8rem;
-      font-weight: bold;
-      letter-spacing: 1px;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    nav {
-      margin-top: 0.5rem;
-      display: flex;
-      justify-content: center;
-      gap: 2rem;
-      font-weight: 600;
-      font-size: 1rem;
-    }
-    nav a {
-      color: #cbd5e0;
+    header nav a {
+      margin-right: 15px;
       text-decoration: none;
-      transition: color 0.3s ease;
+      color: #2b6cb0;
+      font-weight: 600;
     }
-    nav a:hover {
-      color: white;
+    header nav a:hover {
+      text-decoration: underline;
     }
     main {
-      max-width: 700px;
-      margin: 2rem auto;
-      padding: 0 1rem;
-      line-height: 1.6;
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      color: #718096;
-      font-size: 0.9rem;
-      margin-top: 3rem;
+    h1 {
+      color: #2b6cb0;
     }
-    form {
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-    }
-    input, textarea {
+    input[type="text"],
+    input[type="email"],
+    textarea {
+      width: 100%;
       padding: 0.75rem;
-      border: 1px solid #cbd5e0;
+      margin: 0.5rem 0 1rem 0;
+      border: 1px solid #ccc;
       border-radius: 5px;
       font-size: 1rem;
-      font-family: inherit;
-      resize: vertical;
+      box-sizing: border-box;
     }
     button {
-      background: #3182ce;
+      background-color: #2b6cb0;
       color: white;
-      padding: 0.75rem;
       border: none;
+      padding: 0.75rem 1.5rem;
       border-radius: 5px;
       font-weight: 600;
       cursor: pointer;
-      transition: background 0.3s ease;
+      transition: background-color 0.3s ease;
     }
     button:hover {
-      background: #2b6cb0;
+      background-color: #234a8a;
+    }
+    footer {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #777;
     }
   </style>
 </head>
 <body>
   <header>
-    Contact
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
@@ -92,9 +74,9 @@
   <main>
     <h1>Contact Us</h1>
     <p>If you have questions, suggestions, or want to collaborate, please reach out:</p>
-    <form action="floydkbjunior@gmail.com" method="post" enctype="text/plain">
+    <form action="https://formspree.io/f/xwpoyoqz" method="POST">
       <input type="text" name="name" placeholder="Your Name" required />
-      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="email" name="_replyto" placeholder="Your Email" required />
       <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
       <button type="submit">Send</button>
     </form>
