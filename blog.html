@@ -2,167 +2,116 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Blog - My AI Tools Site</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #f9f9f9;
+    /* Same styles from index and about */
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+    body { background: #f5f7fa; color: #333; line-height: 1.6; min-height: 100vh; display: flex; flex-direction: column; }
+    header { background: #232f3e; padding: 1rem 2rem; color: white; display: flex; justify-content: space-between; align-items: center; box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
+    header h1 { font-weight: 700; font-size: 1.5rem; letter-spacing: 1px; }
+    nav a { color: white; text-decoration: none; margin-left: 2rem; font-weight: 600; transition: color 0.3s ease; }
+    nav a:hover { color: #febd69; }
+    main { flex-grow: 1; max-width: 1200px; margin: 2rem auto; padding: 0 1rem; }
+    h2 { font-weight: 700; margin-bottom: 1rem; border-bottom: 3px solid #febd69; padding-bottom: 0.3rem; display: inline-block; }
+    .products-grid {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     }
-    header {
-      background-color: #0f172a;
-      color: white;
-      padding: 1rem;
-      text-align: center;
-    }
-    nav a {
-      color: white;
-      margin: 0 1rem;
-      text-decoration: none;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    main {
-      padding: 2rem;
-    }
-    article {
+    .card {
       background: white;
-      padding: 1.5rem;
-      margin-bottom: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 20px rgba(0,0,0,0.15);
+    }
+    .card img {
+      max-width: 100%;
       border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+      margin-bottom: 1rem;
+    }
+    .card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+    .card p {
+      flex-grow: 1;
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 1rem;
+    }
+    .btn {
+      background-color: #febd69;
+      border: none;
+      padding: 0.6rem 1rem;
+      border-radius: 5px;
+      font-weight: 700;
+      color: #232f3e;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #f3a847;
     }
     footer {
-      text-align: center;
-      background-color: #0f172a;
+      background: #232f3e;
       color: white;
-      padding: 1rem;
+      text-align: center;
+      padding: 1rem 0;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        text-align: center;
+      }
+      nav a {
+        margin: 0.5rem 1rem;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>My AI Tools Blog</h1>
+    <h1>My AI Tools Site</h1>
     <nav>
       <a href="index.html">Home</a>
       <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
       <a href="blog.html">Blog</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
-
   <main>
-    <h2>Latest Posts</h2>
-
-  
-<article>
-  <h3>Top 5 AI Tools to Boost Your Productivity in 2025</h3>
-  <p>Looking to work smarter in 2025? These AI tools can help you write faster, organize better, and make smarter decisions every day.</p>
-  <ol>
-    <li>
-      <strong>Jasper AI:</strong> An AI writing assistant perfect for blog posts, emails, and ad copy. <br />
-      👉 <a href="https://example.com/jasper-ai" target="_blank">Try Jasper AI</a>
-    </li>
-    <li>
-      <strong>Writesonic:</strong> Great for marketing copy and product descriptions with built-in templates. <br />
-      👉 <a href="https://example.com/writesonic" target="_blank">Try Writesonic</a>
-    </li>
-    <li>
-      <strong>Grammarly:</strong> Fixes grammar, tone, and clarity instantly across all platforms. <br />
-      👉 <a href="https://example.com/grammarly" target="_blank">Try Grammarly</a>
-    </li>
-    <li>
-      <strong>Notion:</strong> Manage notes, tasks, and team collaboration in one smart workspace. <br />
-      👉 <a href="https://example.com/notion" target="_blank">Try Notion</a>
-    </li>
-    <li>
-      <strong>Surfer SEO:</strong> Optimize your content for search engines and get higher rankings. <br />
-      👉 <a href="https://example.com/surfer-seo" target="_blank">Try Surfer SEO</a>
-    </li>
-  </ol>
-  <p>These tools are game-changers for entrepreneurs, students, and professionals. Try one today and see the difference AI makes!</p>
- </article>
-
-  <article>
-  <h3>How to Use Jasper AI to Write Faster</h3>
-  <p>Jasper AI is a powerful writing assistant designed to help you produce high-quality content in less time. Whether you're creating blog posts, ads, emails, or social media captions — Jasper can do it all with just a few inputs.</p>
-
-  <h4>Step 1: Choose a Template</h4>
-  <p>Jasper offers templates for everything: blog outlines, product descriptions, and Facebook ads. Choose what you want to create and get started in seconds.</p>
-
-  <h4>Step 2: Input Your Topic</h4>
-  <p>Enter a few keywords or a short description about what you want to write. Jasper will generate suggestions based on that input.</p>
-
-  <h4>Step 3: Edit & Polish</h4>
-  <p>Jasper gives you a full draft within seconds. You can tweak the tone, rewrite sections, and even check for grammar issues before publishing.</p>
-
-  <p>🚀 Boost your productivity and never face writer’s block again.</p>
-  <p><strong>👉 <a href="https://example.com/jasper-ai" target="_blank">Try Jasper AI Today</a></strong></p>
-</article>
-
-    <article>
-  <h3>Why AI Tools Are the Future of Work (And How to Start Using Them)</h3>
-  <p>The workplace is changing fast — and AI tools are leading the way. Whether you're a freelancer, student, entrepreneur, or corporate team member, AI is reshaping how we write, plan, and collaborate.</p>
-
-  <h4>1. Automating Repetitive Tasks</h4>
-  <p>AI tools can handle tasks like grammar checking, meeting notes, and even customer support — freeing up your time for deep work.</p>
-
-  <h4>2. Boosting Creativity</h4>
-  <p>AI like Jasper or Writesonic helps you brainstorm faster, generate creative ideas, and overcome writer’s block in seconds.</p>
-
-  <h4>3. Improving Communication</h4>
-  <p>Grammarly and Notion help you write clearly and collaborate more effectively across teams or clients.</p>
-
-  <h4>4. Better Decision-Making</h4>
-  <p>Tools like Surfer SEO and other data-driven platforms give you smart recommendations based on trends and analytics.</p>
-
-  <p>🌍 Whether you’re building a brand or organizing your life, AI tools can help you do it better, faster, and smarter.</p>
-  
-  <p><strong>👉 Explore top AI tools here:</strong></p>
-  <ul>
-    <li><a href="https://example.com/jasper-ai" target="_blank">Jasper AI</a></li>
-    <li><a href="https://example.com/writesonic" target="_blank">Writesonic</a></li>
-    <li><a href="https://example.com/grammarly" target="_blank">Grammarly</a></li>
-    <li><a href="https://example.com/notion" target="_blank">Notion</a></li>
-    <li><a href="https://example.com/surfer-seo" target="_blank">Surfer SEO</a></li>
-  </ul>
-</article>
-
-<article>
-  <h3>Top 5 Productivity Software to Boost Your Workflow in 2025</h3>
-  <p>Staying productive can be challenging, but the right software can make a huge difference. Here are the top 5 productivity tools you should try this year.</p>
-
-  <h4>1. Notion</h4>
-  <p>Notion is an all-in-one workspace where you can take notes, manage tasks, create databases, and collaborate with your team.</p>
-  <img src="https://cdn.pixabay.com/photo/2021/11/23/07/27/notebook-6815773_1280.jpg" alt="Notion productivity tool" style="width:100%; max-width:600px; border-radius:8px;" />
-
-  <h4>2. Trello</h4>
-  <p>Trello uses boards, lists, and cards to help you organize projects visually and keep track of progress.</p>
-  <img src="https://cdn.pixabay.com/photo/2020/03/31/11/42/board-4981335_1280.jpg" alt="Trello productivity tool" style="width:100%; max-width:600px; border-radius:8px;" />
-
-  <h4>3. Todoist</h4>
-  <p>Todoist is a simple yet powerful to-do list app that helps you keep track of tasks and deadlines.</p>
-  <img src="https://cdn.pixabay.com/photo/2017/08/10/02/26/planner-2617085_1280.jpg" alt="Todoist productivity tool" style="width:100%; max-width:600px; border-radius:8px;" />
-
-  <h4>4. Microsoft Teams</h4>
-  <p>Microsoft Teams is great for chat, meetings, file sharing, and integration with Office apps — perfect for remote work.</p>
-  <img src="https://cdn.pixabay.com/photo/2017/08/07/09/40/office-2608537_1280.jpg" alt="Microsoft Teams productivity tool" style="width:100%; max-width:600px; border-radius:8px;" />
-
-  <h4>5. Slack</h4>
-  <p>Slack offers instant messaging, channels, and app integrations to keep your team connected.</p>
-  <img src="https://cdn.pixabay.com/photo/2016/11/29/04/20/adult-1869716_1280.jpg" alt="Slack productivity tool" style="width:100%; max-width:600px; border-radius:8px;" />
-
-  <p>Try these tools to maximize your productivity and get more done every day!</p>
-</article>
-
-
-   
+    <h2>Latest Blog Posts</h2>
+    <div class="products-grid">
+      <article class="card">
+        <img src="https://cdn.pixabay.com/photo/2017/01/06/19/15/keyboard-1953128_1280.jpg" alt="Boost Your Productivity" />
+        <h3>Boost Your Productivity with AI Tools</h3>
+        <p>Discover how AI tools can transform your workflow and save you time every day.</p>
+        <a href="blog-post-1.html" class="btn">Read More</a>
+      </article>
+      <article class="card">
+        <img src="https://cdn.pixabay.com/photo/2018/03/05/23/01/artificial-intelligence-3202761_1280.jpg" alt="Top AI Software 2025" />
+        <h3>Top AI Software to Try in 2025</h3>
+        <p>Stay ahead with the most powerful AI productivity software available today.</p>
+        <a href="blog-post-2.html" class="btn">Read More</a>
+      </article>
+      <!-- Add more blog cards here -->
+    </div>
   </main>
-
   <footer>
-    &copy; 2025 My AI Tools Site. All rights reserved.
+    &copy; 2025 My AI Tools Site. Powered by AI Tools.
   </footer>
 </body>
 </html>
