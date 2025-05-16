@@ -2,69 +2,138 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Top AI Tools & Productivity Software 2025</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Top AI Tools & Productivity Software</title>
   <style>
-    /* Your existing styles ... plus: */
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: Arial, sans-serif;
       margin: 0;
-      background: #f4f7fb;
+      background: #f9f9f9;
       color: #333;
     }
     header {
-      background: #2d3748;
-      color: white;
-      padding: 1rem 2rem;
+      background: #111;
+      color: #fff;
+      padding: 20px;
       text-align: center;
-      font-size: 1.8rem;
-      font-weight: bold;
-      letter-spacing: 1px;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
     }
     nav {
-      margin-top: 0.5rem;
+      background: #222;
       display: flex;
       justify-content: center;
-      gap: 2rem;
-      font-weight: 600;
-      font-size: 1rem;
+      gap: 20px;
+      padding: 10px 0;
     }
     nav a {
-      color: #cbd5e0;
+      color: #fff;
       text-decoration: none;
-      transition: color 0.3s ease;
     }
     nav a:hover {
-      color: white;
+      text-decoration: underline;
     }
-    main {
+    .container {
+      padding: 40px 20px;
       max-width: 1000px;
-      margin: 2rem auto;
-      padding: 0 1rem;
+      margin: auto;
     }
-    /* rest of your styles here... */
+    .tool-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
+    }
+    .tool-card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    .tool-card h3 {
+      margin-top: 0;
+      color: #222;
+    }
+    .tool-button {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 10px 16px;
+      background: #0077ff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+    .tool-button:hover {
+      background: #005fcc;
+    }
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+    }
+    section {
+      margin-bottom: 60px;
+    }
   </style>
 </head>
 <body>
   <header>
-    Top AI Tools & Productivity Software 2025
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
-    </nav>
+    <h1>Top AI Tools & Productivity Software</h1>
   </header>
-  <main>
-    <!-- Your existing grid of tools here -->
-    <div class="grid">
-      <!-- Cards as before -->
-    </div>
-  </main>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    <section id="home">
+      <h2>Featured Tools</h2>
+      <div class="tool-grid">
+        <div class="tool-card">
+          <h3>Jasper AI</h3>
+          <p><strong>AI writing assistant for marketers:</strong> Jasper helps you write high-converting marketing copy, emails, blog posts, and social media content 10x faster using AI.</p>
+          <a href="https://example.com/jasper" class="tool-button" target="_blank">Try Jasper AI</a>
+        </div>
+
+        <div class="tool-card">
+          <h3>Writesonic</h3>
+          <p><strong>AI content creation for businesses:</strong> From blog posts to ad copy, Writesonic generates SEO-optimized content in seconds, powered by GPT-4.</p>
+          <a href="https://example.com/writesonic" class="tool-button" target="_blank">Try Writesonic</a>
+        </div>
+
+        <div class="tool-card">
+          <h3>Grammarly</h3>
+          <p><strong>Smart grammar and writing assistant:</strong> Instantly fix grammar, spelling, tone, and clarity in everything you write — from emails to essays.</p>
+          <a href="https://example.com/grammarly" class="tool-button" target="_blank">Try Grammarly</a>
+        </div>
+
+        <div class="tool-card">
+          <h3>Notion</h3>
+          <p><strong>Your all-in-one workspace:</strong> Organize notes, projects, and tasks in a flexible, AI-boosted interface for individuals and teams.</p>
+          <a href="https://example.com/notion" class="tool-button" target="_blank">Try Notion</a>
+        </div>
+
+        <div class="tool-card">
+          <h3>Surfer SEO</h3>
+          <p><strong>AI-driven SEO optimization:</strong> Write content that ranks on Google using real-time SEO analysis and keyword recommendations.</p>
+          <a href="https://example.com/surferseo" class="tool-button" target="_blank">Try Surfer SEO</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>This website is dedicated to helping you find the best AI tools and productivity software to grow your business, write faster, and work smarter. All tools listed are tested, trusted, and recommended.</p>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Have questions or suggestions? Feel free to reach out at <a href="mailto:your@email.com">your@email.com</a></p>
+    </section>
+  </div>
+
   <footer>
-    &copy; 2025 YourSiteName. Powered by AI Tools.
+    © 2025 YourSiteName. Powered by AI Tools.
   </footer>
 </body>
 </html>
